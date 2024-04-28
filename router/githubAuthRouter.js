@@ -8,7 +8,7 @@ passport.authenticate('github', { scope: ['profile' ] }));
 
 githubAuthRouter.get( '/callback',
   passport.authenticate( 'github', {
-    successRedirect: 'http://localhost:3002/auth/success',
+    successRedirect: 'https://social-auth-8kl8.onrender.com/auth/success',
     failureRedirect: '/auth/failure'
   })
 );

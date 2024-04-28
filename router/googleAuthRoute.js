@@ -8,7 +8,7 @@ googleAuthRouter.get('/',
 
 googleAuthRouter.get( '/callback',
     passport.authenticate( 'google', {
-      successRedirect: 'http://localhost:3002/auth/success',
+      successRedirect: 'https://social-auth-8kl8.onrender.com/auth/success',
       failureRedirect: '/auth/failure'
     })
   );

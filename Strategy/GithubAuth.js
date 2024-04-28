@@ -14,7 +14,7 @@ passport.deserializeUser(function(name, done) {
 passport.use(new GitHubStrategy({
     clientID: "083ae95b40b40a524a27",
     clientSecret: "f4b1a8fdc302b3c451309a54fcf391699d44afba",
-    callbackURL: "http://localhost:3002/auth/github/callback"
+    callbackURL: "https://social-auth-8kl8.onrender.com/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     done(null , profile)
